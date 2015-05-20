@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_som" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/viewForSave" android:background="@drawable/bg_som" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_centerHorizontal="true">
+                <TextView android:textSize="30.0sp" android:textColor="#fff8f7bb" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="how old are you ^_^" />
+                <TextView android:textSize="20.0sp" android:textColor="#fff8f7bb" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="how old do I look?" />
+                <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                        <TextView android:textSize="20.0sp" android:textColor="#fff8f7bb" android:id="@id/TextView02" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="By " />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:background="#fff8f7bb" android:padding="1.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="false">
+                <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/LinearLayoutContent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <Button android:textSize="20.0sp" android:textColor="#fff8f7b0" android:id="@id/Button02" android:background="@drawable/bg_btn_brown" android:layout_width="90.0dip" android:layout_height="40.0dip" android:text="Share" />
+            <Button android:textSize="20.0sp" android:textColor="#fff8f7b0" android:id="@id/Button03" android:background="@drawable/bg_btn_brown" android:layout_width="90.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:text="Again" />
+            <Button android:textSize="20.0sp" android:textColor="#fff8f7b0" android:id="@id/Button01" android:background="@drawable/bg_btn_brown" android:layout_width="90.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:text="Save" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayoutAdMob" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+</RelativeLayout>
