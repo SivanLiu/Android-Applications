@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button 
+       android:id="@+id/id_getImage"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Get_Image"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:layout_marginRight="10dip"
+        />
+    <Button
+	    android:id="@+id/id_detect"
+	    android:text="Detect"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_tip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dip"
+        android:layout_alignTop="@id/id_detect"
+        android:layout_toLeftOf="@id/id_detect"
+        android:gravity="center"
+         />
+
+	<ImageView
+	    android:id="@+id/id_photo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/id_tip"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:src="@drawable/t4" />
+
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone"
+	    android:clickable="true"
+	    android:id="@+id/id_waitting"
+	    >
+	    <ProgressBar 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        />
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:id="@+id/id_age_and_gender"
+	        android:background="@drawable/hint"
+	        android:visibility="invisible"
+	        android:text="123"
+	        android:textColor="#ffff00ff"
+	        android:textSize="22sp"
+	        android:gravity="center"
+	        />
+	</FrameLayout>
+
+</RelativeLayout>
