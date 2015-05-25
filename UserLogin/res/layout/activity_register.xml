@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+          
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hint"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="请输入用户名：" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_username"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="请输入密码：" />
+
+        <EditText
+            android:id="@+id/ets_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@+id/et_password"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="确认密码：" />
+
+        <EditText
+            android:id="@+id/et_sex"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ets_password"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="性别：" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_sex"
+            android:numeric="integer"
+            android:ems="10"
+            android:hint="年龄：" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_age"
+            android:singleLine="true"
+            android:ems="10"
+            android:hint="地址：" />
+
+      <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="请填入以下信息：" />
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_address"
+        android:layout_centerHorizontal="true"
+        android:onClick="submit"
+        android:text="提交" />
+    </RelativeLayout>
+
+</LinearLayout>
