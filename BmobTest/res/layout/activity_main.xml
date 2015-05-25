@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+      />
+	 <EditText
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your feedback"
+        android:lines="5"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="@id/name"
+        android:layout_marginTop="37dip"
+     
+/>
+
+     <Button
+         android:id="@+id/query"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/submit"
+         android:layout_alignBottom="@+id/submit"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="57dp"
+         android:onClick="query"
+         android:text="query" />
+
+     <Button
+         android:id="@+id/submit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/feedback"
+         android:layout_marginRight="40dp"
+         android:layout_marginTop="56dp"
+         android:layout_toLeftOf="@+id/query"
+         android:onClick="submit"
+         android:text="submit" />
+
+  <Button
+      android:id="@+id/query_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:onClick="query_feedback"
+      android:text="queryOne" />
+
+  <EditText
+      android:id="@+id/feedbackone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/query_name"
+      android:layout_alignBottom="@+id/query_name"
+      android:layout_alignParentLeft="true"
+      android:layout_toLeftOf="@+id/query_name"
+      android:hint="Your name" >
+
+  </EditText>
+
+  <Button
+      android:id="@+id/pushAll"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/query_name"
+      android:layout_alignLeft="@+id/submit"
+      android:layout_marginBottom="66dp"
+      android:onClick="PushAll"
+      android:text="PushAll" />
+
+</RelativeLayout>
